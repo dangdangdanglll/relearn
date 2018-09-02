@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+数量：<input type="text" id="txt" value="1"/>
+<input type="button" onclick="add()" value="+">
+<input type="button" onclick="sub()" value="-">
+</td>
+价格：<input type="text" id="txtt" value="8" >
+<br>
+
+数量：<input type="text" id="txt1" value="1"/>
+<input type="button" onclick="add1()" value="+">
+<input type="button" onclick="sub1()" value="-">
+</td>
+价格：<input type="text" id="txtt1" value="9" >
+<br>
+
+数量：<input type="text" id="txt2" value="1"/>
+<input type="button" onclick="add2()" value="+">
+<input type="button" onclick="sub2()" value="-">
+</td>
+价格：<input type="text" id="txtt2" value="10" >
+<br>
+总价：<input tyspe="text"  id="zong" value="27">
+<script>
+    function add(){
+        var txt=document.getElementById("txt");
+        var a=txt.value;
+        a++;
+        txt.value=a;
+
+        var txtt = document.getElementById("txtt");
+        var aa = txtt.value;
+        aa = parseInt(aa) + 8;
+        txtt.value = aa;
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+
+    }
+    function sub(){
+        var txt=document.getElementById("txt");
+        var a=txt.value;
+        if(a>1){
+            a--;
+            txt.value=a;
+        }else{
+            txt.value=1;
+        }
+
+        var txtt = document.getElementById("txtt");
+        var aa = txtt.value;
+        aa = parseInt(aa) - 8;
+        txtt.value = aa;
+        
+
+
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+    }
+
+    
+
+
+
+
+    function add1(){
+        var txt=document.getElementById("txt1");
+        var a=txt.value;
+        a++;
+        txt.value=a;
+        var txtt = document.getElementById("txtt1");
+        var aa = txtt.value;
+        aa = parseInt(aa) + 9;
+        txtt.value = aa;
+
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+
+    }
+    function sub1(){
+        var txt=document.getElementById("txt1");
+        var a=txt.value;
+        if(a>1){
+            a--;
+            txt.value=a;
+        }else{
+            txt.value=1;
+        }
+        var txtt = document.getElementById("txtt1");
+        var aa = txtt.value;
+        aa = parseInt(aa) - 9;
+        txtt.value = aa;
+
+
+
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+        
+    }
+
+    function add2(){
+        var txt=document.getElementById("txt2");
+        var a=txt.value;
+        a++;
+        txt.value=a;
+        var txtt = document.getElementById("txtt2");
+        var aa = txtt.value;
+        aa = parseInt(aa) + 10;
+        txtt.value = aa;
+
+
+
+
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+    }
+    function sub2(){
+        var txt=document.getElementById("txt2");
+        var a=txt.value;
+        if(a>1){
+            a--;
+            txt.value=a;
+        }else{
+            txt.value=1;
+        }
+        var txtt = document.getElementById("txtt2");
+        var aa = txtt.value;
+        aa = parseInt(aa) - 10;
+        txtt.value = aa;
+
+
+
+
+
+        var zz = document.getElementById("zong");
+        var z = zz.value;
+        var txtt = document.getElementById("txtt");
+        var dd = txtt.value;
+        var txtt = document.getElementById("txtt1");
+        var ee = txtt.value;
+        var txtt = document.getElementById("txtt2");
+        var ff = txtt.value;
+        z = parseInt(dd) + parseInt(ee) + parseInt(ff);
+        zz.value = z;
+
+
+
+
+
+    }
+</script>
+</body>
+</html> 
